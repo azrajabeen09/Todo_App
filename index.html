@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-5">
+    <div class="shadow-800 shadow-lg max-w-2xl w-full p-6 rounded-lg bg-gray-100">
+        <h1 class="text-4xl font-bold py-3 text-black ">
+            TODO-List
+        </h1>
+
+        <!-- Todo form -->
+        <div class="flex mb-6 group">
+            <input id="taskInput" type="text" placeholder="Add a new task..."
+                class="flex-1 px-4 py-3 rounded-sm bg-gray-100 border border-gray-300 focus:outline-none shadow-lg">
+            <button
+                class="px-5 rounded-sm bg-blue-500 font-medium hover:bg-blue-800 transition-all duration-300"
+                id="addTaskBtn">
+                Add
+            </button>
+        </div>
+
+        <!-- Task list -->
+        <div class="space-y-3 mb-6" id="taskList"></div>
+
+        <!-- States -->
+        <div
+            class="p-4 rounded-lg border border-gray-300">
+            <div class="flex justify-between text-sm">
+                <div class="text-center">
+                    <div id="pendingCount" class="text-2xl font-bold">0</div>
+                    <div class="text-gray-500 ">Pending</div>
+                </div>
+                <div class="text-center">
+                    <div id="completedCount" class="text-2xl font-bold">0</div>
+                    <div class="text-gray-500">Completed</div>
+                </div>
+                <div class="text-center">
+                    <div id="totalCount" class="text-2xl font-bold">0</div>
+                    <div class="text-gray-500">Total</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
