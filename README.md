@@ -9,6 +9,8 @@ A simple and interactive TODO List web app built using HTML, Tailwind CSS, and J
 
 
 📍How It Works:
+
+
 Tasks are stored in a JavaScript array
 Each task has:
 1. text (task content)
